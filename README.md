@@ -27,7 +27,7 @@
       The Diagram
       ---
 
-       ![Factory Method Pattern](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/zuriel-diaz/design-patterns/main/diagrams/factory-method-pattern.iuml)
+       ![Factory Method Pattern](/diagrams/factory-method-pattern.svg)
 
 
 1. Structural
