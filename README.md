@@ -24,6 +24,12 @@
 
        The creator returns the concrete implementation according to the value of the parameter to the client, and the client uses the provided object to complete its task.
 
+      The Diagram
+      ---
+
+       ![Factory Method Pattern](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/zuriel-diaz/design-patterns/main/diagrams/factory-method-pattern.iuml)
+
+
 1. Structural
 1. Behavior
 
