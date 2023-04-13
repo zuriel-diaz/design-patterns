@@ -1,7 +1,7 @@
 @startuml
 Product <|.. ConcreteProductA
 Product <|.. ConcreteProductB
-Creator ..> Product
+Creator --> Product
 Creator <|-- ConcreteCreatorA
 Creator <|-- ConcreteCreatorB
 
@@ -15,10 +15,12 @@ class Creator {
 }
 
 class ConcreteCreatorA {
+  someOperation(): Void
   createProduct(): Product
 }
 
 class ConcreteCreatorB {
+  someOperation(): Void
   createProduct(): Product
 }
 
