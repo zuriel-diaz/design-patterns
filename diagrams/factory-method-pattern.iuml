@@ -1,0 +1,33 @@
+@startuml
+Product <|.. ConcreteProductA
+Product <|.. ConcreteProductB
+Creator ..> Product
+Creator <|-- ConcreteCreatorA
+Creator <|-- ConcreteCreatorB
+
+interface Product {
+  doStuff(): Void
+}
+
+class Creator {
+  someOperation(): Void
+  createProduct(): Product
+}
+
+class ConcreteCreatorA {
+  createProduct(): Product
+}
+
+class ConcreteCreatorB {
+  createProduct(): Product
+}
+
+class ConcreteProductA {
+  doStuff(): Void
+}
+
+class ConcreteProductB {
+  doStuff(): Void
+}
+
+@enduml
