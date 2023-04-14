@@ -1,0 +1,43 @@
+@startuml
+Builder <|.. ConcreteProductBuilder
+ConcreteProductBuilder --> Product
+Director --> Builder
+
+class Product {
+  type: int
+  name: str
+  description: str
+  price: float
+  countries: list
+  alias: str
+}
+
+interface Builder{
+  setType()
+  setName()
+  setDescription()
+  setPrice()
+  setCountries()
+  setAlias()
+  build(): Product
+}
+
+class ConcreteProductBuilder {
+  product: Product
+  setType()
+  setName()
+  setDescription()
+  setPrice()
+  setCountries()
+  setAlias()
+  build(): Product
+}
+
+class Director {
+  builder: Builder
+  Director(builder)
+  changeBuilder(builder)
+  make(type)
+}
+
+@enduml
