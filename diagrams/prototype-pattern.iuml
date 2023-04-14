@@ -1,0 +1,25 @@
+@startuml
+
+Prototype <|-- ConcretePrototypeA
+Prototype <|-- ConcretePrototypeB
+
+interface Prototype {
+  classAttribute1
+  classAttribute2
+  clone(): Product
+}
+
+class ConcretePrototypeA {
+  classAttribute3
+  classAttribute4
+  clone(): Product
+}
+
+class ConcretePrototypeB {
+  classAttribute5
+  classAttribute6
+  clone(): Product
+}
+
+
+@enduml

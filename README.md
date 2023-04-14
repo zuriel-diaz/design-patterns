@@ -50,7 +50,30 @@
       The Diagram
       ---
 
-       ![Factory Method Pattern](/diagrams/builder-pattern.svg)
+       ![Builder Pattern](/diagrams/builder-pattern.svg)
+
+   * Prototype
+
+      > Create new objects by cloning existing ones.
+
+      When to use it?
+       Is typically implemented when cloning is a cheaper operation than creating a new object and when the creation necessitates long, expensive calls (complex classes, complex calculations, expensive database operations, etc).
+
+      **Logic**
+
+       i. Prototype interface: Create an interface that describes the `clone()` method.
+
+       ii. Concrete prototype class(es): Implement the concrete prototype class(es). You'll need to decide whether a shallow or deep copy is required.
+
+        * A Shallow copy, copies and creates new references one level deep. It will create new copies of the objects with new references in memory, but the underlying data will point to the same memory location as the original list/object being copied.
+        * A deep copy, copies and creates new references for all levels. In short, a deep copy will create new instances, with the same data.
+
+       iii. Client: The client application that uses and creates the concrete prototype class(es).
+
+      The Diagram
+      ---
+
+       ![Prototype Pattern](/diagrams/prototype-pattern.svg)
 
 1. Structural
 1. Behavior
